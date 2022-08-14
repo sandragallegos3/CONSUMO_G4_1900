@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos</title>
+   <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JS/Vuelos.js"></script>
+</head>
+<body style="background-color:#FFE4C4">
+ 
+ 
+        <a href="../Home.html" class="btn btn-outline-dark" >REGRESAR</a>
+
+    <div class="container"  style="background-color:#DEB887">
+ 
+        <div class="consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>
+                        LISTA DE VUELOS
+                    </h3>
+                </div>
+            </div>
+
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>CODIGOVUELO</th>
+                                <th>CIUDAD DE ORIGEN</th>
+                                <th>CIUDAD DE DESTINO</th>
+                                <th>FECHA DE VUELO</th>
+                                <th>CANTIDAD DE PASAJEROS</th>
+                                <th>TIPO DE AVION</th>
+                                <th>DISTANCIA (KM)</th>
+                            </tr>
+                        </thead>
+                            <tbody id="DataVuelos">
+       
+                            </tbody>
+                    </table>     
+                </div>
+            </div>
+        </div>
+
+        <div class="Formulario">
+
+            <div class="row " style="background-color:#FFFACD">
+                <div class="col-12">
+                    <h3>
+                        AGREGAR VUELOS:
+                    </h3>
+                </div>
+
+                <div class="col-12">
+                    <form class="Vuelos"></form>
+                        <label for="">Codigo</label>
+                        <input type="text"  id="Codigo" class="form-control" placeholder="Ingrese el codigo de vuelo">
+
+                        <label for="">Ciudad De Origen</label>
+                        <input type="text"  id="CiudadDeOrigen" class="form-control" placeholder="Ingrese la ciudad de origen">
+
+                        <label for="">Ciudad De Destino</label>
+                        <input type="text"  id="CiudadDeDestino" class="form-control" placeholder="Ingrese la ciudad de destino">
+
+                        <label for="">Fecha De Vuelo</label>
+                        <input type="text"  id="FechaDeVuelo" class="form-control" placeholder="Ingrese la fecha de vuelo">
+
+                        <label for="">Cantidad De Pasajeros</label>
+                        <input type="text"  id="CantidadDePasajeros" class="form-control" placeholder="Ingrese la cantidad de pasajeros">
+
+                        <label for="">Tipo De Avion</label>
+                        <input type="text"  id="TipoDeAvion" class="form-control" placeholder="Ingrese el tipo de avion">
+
+                        <label for="">Distancia (Km)</label>
+                        <input type="text"  id="DistanciaKm" class="form-control" placeholder="Ingrese la distancia del vuelo">
+
+                        <hr>
+                        <div id="btnAgregarVuelos">
+                            <input type="submit" id="btnAgregar" onclick="AgregarVuelo()" value="Ingresar Vuelo" class="btn btn-success"></input>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
